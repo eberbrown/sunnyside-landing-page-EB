@@ -1,68 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Roboto+Condensed:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
-  About
-  Services
-  Projects
-  Contact
 
-  We are creatives
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top navigationBar mt-4">
+    <a class="navbar-brand nav-logo text-white ml-3" href="#">sunnyside</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">About <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Projects</a>
+        </li>
+        <li class="nav-item li-contact">
+          <!-- <button type="button" class="btn btn-light rounded-pill"><a class="nav-link rounded-pill" href="#">Contact</a></button> -->
+          <a class="nav-link border border-white text-dark rounded-pill bg-white nav-contact pr-4 pl-4"
+            href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-  Transform your brand
+  <div class="home-section">
+    <h1>We are creatives</h1>
+    <span><img src="/sunnyside-agency-landing-page-main/images/icon-arrow-down.svg" alt=""></span>
+    <img src="/sunnyside-agency-landing-page-main/images/desktop/image-header.jpg" alt="image-header">
+  </div>
 
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
+  <div class="whatyouget-section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 align-self-center text-whatyouget-section">
+          <h2>Transform your <br> brand</h2>
+          <p>We are a full-service creative agency specializing in helping brands grow fast.
+            Engage your clients through compelling visuals that do most of the marketing for you.</p>
+          <button class="btn p-0">Learn more</button>
+        </div>
+        <div class="col-sm-6 ms-auto p-0">
+          <img src="/sunnyside-agency-landing-page-main/images/desktop/image-transform.jpg" alt="image-transform">
+        </div>
+      </div>
+    </div>
 
-  Learn more
+  <div class="whatyouget-section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 p-0">
+          <img src="/sunnyside-agency-landing-page-main/images/desktop/image-stand-out.jpg" alt="image-stand-out">
+        </div>
+        <div class="col-sm-6 align-self-center text-whatyouget-section">
+          <h2>Stand out to the right audience</h2>
 
-  Stand out to the right audience
+      <p> Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll
+        build and extend your brand in digital places.</p>
 
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+      <button class="btn p-0"> Learn more</button>
+        </div>
+        
+      </div>
+    </div>
 
-  Learn more
+    <div>
+      
+      
+    </div>
+  </div>
 
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
 
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+  <div>
+    <div>
+      <img src="/sunnyside-agency-landing-page-main/images/desktop/image-graphic-design.jpg" alt="image-graphic-design">
+      <h3>Graphic design</h3>
+      <p> Great design makes you memorable. We deliver artwork that underscores your brand message and captures
+        potential clients’ attention.</p>
+    </div>
+    <div>
+      <img src="/sunnyside-agency-landing-page-main/images/desktop/image-photography.jpg" alt="image-photography">
+      <h3>Photography</h3>
+      <p> Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+      </p>
+    </div>
+  </div>
 
-  Client testimonials
 
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
 
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
+  <div>
+    <h3>
+      Client testimonials
+    </h3>
+    <div>
+      <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+      </p>
+      <h4>Emily R.</h4>
+      <span>Marketing Director</span>
+    </div>
+    <div>
+      <p> Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and
+        enjoyable experience.</p>
+      <h4>Thomas S.</h4>
+      <span>Chief Operating Officer</span>
+    </div>
+    <div>
+      <p> Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+      <h4>Jennie F.</h4>
+      <span>Business Owner</span>
+    </div>
+  </div>
 
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
+  <div>
+    <div>
+      <img src="/sunnyside-agency-landing-page-main/images/desktop/image-gallery-milkbottles.jpg" alt="milk-image">
+    </div>
+    <div>
+      <img src="/sunnyside-agency-landing-page-main/images/desktop/image-gallery-orange.jpg" alt="orange-image">
+    </div>
+    <div>
+      <img src="/sunnyside-agency-landing-page-main/images/desktop/image-gallery-cone.jpg" alt="cone-image">
+    </div>
+    <div>
+      <img src="/sunnyside-agency-landing-page-main/images/desktop/image-gallery-sugarcubes.jpg" alt="sugarcones-image">
+    </div>
+  </div>
 
-  About
-  Services
-  Projects
-  Contact
+
+  <footer>
+    <h3>sunnyside</h3>
+    <ul>
+      <li>About</li>
+      <li>Services</li>
+      <li>Projects</li>
+      <li>Contact</li>
+    </ul>
+    <ul>
+      <li><img src="/sunnyside-agency-landing-page-main/images/icon-facebook.svg" alt="icon-facebook"></li>
+      <li><img src="/sunnyside-agency-landing-page-main/images/icon-instagram.svg" alt="icon-instagram"></li>
+      <li><img src="/sunnyside-agency-landing-page-main/images/icon-pinterest.svg" alt="icon-pinterest"></li>
+      <li><img src="/sunnyside-agency-landing-page-main/images/icon-twitter.svg" alt="icon-twitter"></li>
+    </ul>
+  </footer>
+
+
+
+
+
+
+
+
+
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Eber Brown</a>.
   </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

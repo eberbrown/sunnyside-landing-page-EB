@@ -1,0 +1,77 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6, .nav-logo {
+    font-family: 'Crimson Text', serif;
+    font-weight: 700;
+}
+
+.nav-logo {
+    font-size: 2rem;
+}
+
+#navbarNav ul li a {
+    margin-left: 30px;
+}
+
+.nav-contact {
+    font-family: 'Crimson Text', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.home-section {
+    text-align: center;
+}
+
+.home-section h1 {
+    position: absolute;
+    margin-top: 15vh;
+    width: 100vw;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: whitesmoke;
+}
+
+.home-section span img {
+    position: absolute;
+    height: 13vh;
+    width: 100vw;
+    margin-top: 35vh;
+}
+
+.home-section img {
+    width: 100vw;
+}
+
+.whatyouget-section img {
+    width: 100%;
+}
+
+.text-whatyouget-section {
+    padding: 5rem;
+}
+
+.text-whatyouget-section h2 {
+    font-size: 3rem;
+}
+
+.text-whatyouget-section p {
+    color: darkgray;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1.5rem;
+}
+
+.text-whatyouget-section button {
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing: 1.5px;
+   text-decoration: underline;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
