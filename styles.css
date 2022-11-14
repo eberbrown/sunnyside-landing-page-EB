@@ -34,27 +34,34 @@ h6,
 
 .home-section {
   text-align: center;
+  min-height: 80vh;
+  width: 100%;
+  background-image: url(/sunnyside-agency-landing-page-main/images/desktop/image-header.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center 60%;
 }
 
 .home-section h1 {
   position: absolute;
-  margin-top: 15vh;
+  margin-top: 20vh;
+  font-size: 3.5rem;
   width: 100vw;
   text-transform: uppercase;
   letter-spacing: 10px;
   color: whitesmoke;
 }
 
-.home-section span img {
+.home-section span {
   position: absolute;
-  height: 13vh;
-  width: 100vw;
+  /* width: 100%; */
+  width: 0%;
   margin-top: 35vh;
 }
 
-.home-section img {
+/* .home-section img {
   width: 100vw;
-}
+} */
 
 /* ----------------------- WHAT YOU GET SECTION --------------------------------- */
 
@@ -98,100 +105,246 @@ h6,
 }
 
 /* ----------------------- WHAT WE DO SECTION --------------------------------- */
-.whatwedo-section {
-    position:relative;
+
+ .whatwedo-section {
+  position: relative;
 }
 
 .text-whatwedo-section {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 0 20% 10% 20%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 20% 8% 20%;
 }
 
-.text-whatwedo-section p{
-    margin-top: 25px;
+.text-whatwedo-section p {
+  margin-top: 25px;
+  font-size: 1.2rem;
 }
 
-.whatwedo-section img {
-    width: 100%;
-    /* min-height: 50vh; */
-   /* z-index: -2; */
+.colOne {
+  min-height: 60vh;
+  width: 100%;
+  background-image: url(/sunnyside-agency-landing-page-main/images/desktop/image-graphic-design.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: top;
 }
+
+.colTwo {
+  min-height: 60vh;
+  width: 100%;
+  background-image: url(/sunnyside-agency-landing-page-main/images/desktop/image-photography.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
 
 /* ----------------------- TESTIMONIALS SECTION --------------------------------- */
 
 .testimonials-section h4 {
-    text-transform: uppercase;
-    color: silver;
-    letter-spacing: 3px;
-    margin-top: 10%;
+  text-transform: uppercase;
+  color: silver;
+  letter-spacing: 3px;
+  margin-top: 10%;
 }
 
 .testimonials-container {
-    margin-top: 5%;
-    margin-bottom: 8%;
+  margin-top: 5%;
+  margin-bottom: 8%;
 }
 
 .testimonials-section img {
-    height: 20%;
-    border-radius: 50% 5%;
+  height: 20%;
+  border-radius: 50% 5%;
 }
 
 .testimonials-section p {
-    margin: 10% 5% 15% 5%;
-    line-height: 1.7;
-    letter-spacing: 0.3px;
-    color:darkslategray;
+  margin: 10% 5% 15% 5%;
+  line-height: 1.7;
+  letter-spacing: 0.3px;
+  color: darkslategray;
 }
 
 .testimonials-section span {
-    color: silver;
-    font-size: smaller;
+  color: silver;
+  font-size: smaller;
 }
 
 /* ----------------------- IMAGE SECTION --------------------------------- */
 
 .image-section img {
-    width: 100%;
+  width: 100%;
 }
 
 /* ----------------------- FOOTER SECTION --------------------------------- */
 
-.footer-section, .footer-section li {
-    background-color: #8FD4C5;
+.footer-section,
+.footer-section li {
+  background-color: #8fd4c5;
 }
 
 .footer-section h3 {
-    color: #307668;
-    padding-top: 4%;
+  color: #307668;
+  padding-top: 4%;
 }
 
 .footer-links {
-    margin-top: 2%;
-    margin-bottom: 3.5%;
+  margin-top: 2%;
+  margin-bottom: 3.5%;
 }
 
 .footer-links a {
-    text-decoration: none;
-    color: #307668;
-    /* pointer-events: none; */
+  text-decoration: none;
+  color: #307668;
+  /* pointer-events: none; */
 }
 
 .footer-links a:hover {
-    color: aliceblue;
-} 
+  color: aliceblue;
+}
 
 .white-background {
-    fill: aliceblue;
+  fill: aliceblue;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
-  background-color: #8FD4C5;
+  background-color: #8fd4c5;
   padding-top: 2%;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* ----------------------- RESPONSIVE DESIGN --------------------------------- */
+
+@media screen and (max-width: 1024px) {
+
+  /* ----------------------- HOME SECTION ----------------------------------------- */
+
+  .home-section h1 {
+    letter-spacing: 8px;
+    margin-top: 18vh;
+    font-size: 4rem;
+    padding: 0 5vw 0 5vw;
+  }
+
+  .home-section span {
+    margin-top: 39vh;
+  }
+
+  /* ----------------------- WHAT YOU GET SECTION --------------------------------- */
+
+  .text-whatyouget-section {
+    padding: 2rem;
+  }
+
+  .text-whatyouget-section h2 {
+    font-size: 2rem;
+  }
+
+  .text-whatyouget-section p {
+    font-size: 1rem;
+    letter-spacing: 0.4px;
+    line-height: 1.4rem;
+  }
+
+  /* ----------------------- WHAT WE DO SECTION --------------------------------- */
+  
+  .text-whatwedo-section p {
+    font-size: 1.2rem;
+  }
+
+  .text-whatwedo-section {
+    padding: 0 10% 10% 10%;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  /* ----------------------- HOME SECTION --------------------------------- */
+
+  .home-section h1 {
+    margin-top: 15vh;
+    letter-spacing: 8px;
+    padding: 0 10vw 0 10vw;
+  }
+
+  .home-section span {
+    margin-top: 25vh;
+  }
+
+  .home-section h1 {
+    letter-spacing: 8px;
+    margin-top: 18vh;
+    font-size: 4rem;
+  }
+
+  .home-section span {
+    margin-top: 42vh;
+  }
+
+
+
+  /* ----------------------- WHAT YOU GET SECTION --------------------------------- */
+  
+  .whatyouget-section img {
+    max-width: auto;
+    height: 100%;
+  }
+
+  .text-whatyouget-section {
+    padding: 5rem;
+    text-align: center;
+  }
+
+  .text-whatyouget-section h2 {
+    font-size: 2.5rem;
+  }
+
+  /* The class below only applies when the screen is smaller than 767 pixels. What it does is change the positioning of two elements within the row div (in this case). */
+  .main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  /* ----------------------- WHAT WE DO SECTION --------------------------------- */
+
+  .text-whatwedo-section {
+    padding: 0 15% 5% 15%;
+  }
+
+ 
+  .text-whatwedo-section p {
+    font-size: 1.1rem;
+  }
+
+  .colOne {
+    background-position: center 25%;
+  }
+  
+  .colTwo {
+    background-position: center 25%;
+  }
+
+  /* ----------------------- FOOTER SECTION --------------------------------- */
+
+.footer-section h3 {
+  padding-top: 13%;
+}
+
+.footer-links {
+  margin-top: 8%;
+  margin-bottom: 6%;
+}
+
+.attribution {
+  padding-top: 5%;
+}
+
+}
+
